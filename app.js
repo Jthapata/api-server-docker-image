@@ -6,7 +6,7 @@ const login = require('connect-ensure-login')
 const bcrypt = require('bcryptjs')
 const { Strategy } = require('passport-local')
 const app = express()
-const port = process.env.PORT || 8080
+const port = 8181
 
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false }))
